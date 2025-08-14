@@ -1,31 +1,31 @@
 
-# 🤖 Lustiger Kleiner Bot (LKB)
+# Lustiger Kleiner Bot (LKB) 
 
-Ein leistungsstarker, lokal gehosteter Discord-Bot mit Slash-Commands, Admin-Tools und einem **Console-Mode**, um Serveraktionen direkt über deine lokale Konsole auszuführen.
+Ein leistungsstarker, lokal gehosteter Discord-Bot mit Slash-Commands, Admin-Tools und einem **Console-Mode**, Hauptfokus liegt natürlich auf griefing :D
 
-> ⚠ **Achtung:** Dieser Bot kann extrem destruktive Aktionen auf einem Discord-Server durchführen. Verwende ihn nur in Testumgebungen oder mit voller Berechtigung!
+>  **Achtung:** Ich übernehme **keine** verantwortung für was auch immer mit diesem Bot getan wird ;p
 
 ---
 
-## 📌 Funktionen
+## Funktionen
 
-### 🔹 Basis
+### Basis
 - `/ping` → Testet, ob der Bot reagiert ("Pong!").
 
-### 🔹 Kanalbefehle (`/lkb channel`)
+### Kanalbefehle (`/lkb channel`)
 - `delete <name|*>` → Löscht Kanäle mit bestimmtem Namen oder mit `*` alle Kanäle.
 - `rename_all` → Bennent alle Kanäle (und optional Kategorien) nach einem Muster um.
 
-### 🔹 Mitgliederbefehle (`/lkb members`)
+### Mitgliederbefehle (`/lkb members`)
 - `kick_all` → Kickt (fast) alle Mitglieder, mit Schutz für Owner/Admins/Bots (optional deaktivierbar).
 
-### 🔹 Rollenbefehle (`/lkb roles`)
+### Rollenbefehle (`/lkb roles`)
 - `delete_all` → Löscht Rollen (mit Schutz für Standardrolle, höchste Botrolle und gemanagte Rollen).
 
-### 🔹 Serverinfos
+### Serverinfos
 - `/lkb server` → Zeigt Infos zum aktuellen Server.
 
-### 🔹 Console-Mode (`/lkb switch console`)
+### Console-Mode (`/lkb switch console`)
 - `on` → Aktiviert die Möglichkeit, **lokal** Befehle an den Bot zu senden, die er auf dem Server ausführt.
 - `off` → Deaktiviert den Modus.
 - **Unterstützte Befehle in der Konsole:**
@@ -33,12 +33,12 @@ Ein leistungsstarker, lokal gehosteter Discord-Bot mit Slash-Commands, Admin-Too
   - `channel delete <name|*>` → Löscht Kanäle.
   - `server info` → Zeigt Serverinformationen.
 
-### 🔹 Commands neu laden
+### Commands neu laden
 - `/lkb resync` → Synchronisiert die Slash-Commands erneut.
 
 ---
 
-## ⚙ Installation
+## Installation
 
 1. **Repository klonen**
    ```bash
@@ -77,7 +77,7 @@ Ein leistungsstarker, lokal gehosteter Discord-Bot mit Slash-Commands, Admin-Too
 
 ---
 
-## 🖥 Console-Mode
+## Console-Mode
 
 Mit `/lkb switch console on` kannst du Befehle über deine **lokale Konsole** an den Bot senden.
 Du musst angeben:
@@ -101,22 +101,32 @@ Deaktivieren:
 
 ---
 
-## ⚠ Sicherheitshinweise
+## Sicherheitshinweise
 
-* Verwende diesen Bot **nicht** auf produktiven Servern ohne ausdrückliche Genehmigung.
+* Verwende diesen Bot **nicht** auf produktiven Servern ohne ausdrückliche Genehmigung. (Muss das sagen, kontrolieren kanns eh keiner :D)
 * Befehle wie `kick_all`, `delete_all` oder `channel delete *` sind irreversibel.
 * Der **Console-Mode** gibt dir direkten Zugriff über die lokale Konsole – sichere deine Umgebung entsprechend ab.
 
 ---
 
-## 📄 Lizenz
+## Lizenz
 
 Dieses Projekt steht unter der **MIT-Lizenz**. Siehe [LICENSE](LICENSE) für Details.
+MIT-Lizenz in Kurzform:
+`"Hier ist der Code. Mach damit, was du willst – aber erwähne meinen Namen und verlange nicht, dass ich für Schäden hafte."`
+---
+
+## Autor
+
+**Lustiger Kleiner Bot** entwickelt von *Mausi*.
 
 ---
 
-## ✍ Autor
-
-**Lustiger Kleiner Bot** entwickelt von *\[Dein Name oder Alias]*.
-
-
+### Signatur
+# /* ======================================== */
+# // Signature
+# //
+#    01001001 01110000 01000001 01110101 01010110 01000011 01000101
+#    01100111 01011010 01000101 01010011 00111000 01001010 00110010
+#    01001001 01101110 01010000 01100111 00111101 00111101
+# /* ======================================== */
