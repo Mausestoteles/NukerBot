@@ -1,7 +1,5 @@
-Klar – hier ist eine **README.md** für deinen „Lustiger Kleiner Bot“ in Markdown-Format:
-
 ````markdown
-# Lustiger Kleiner Bot (LKB)
+# Lustiger Kleiner Bot (LKB) Nuker Bot
 
 Ein mächtiger, lokal gehosteter Discord-Admin-Bot mit Slash-Commands.  
 Alle Admin-Funktionen sind unter der Haupt-Command-Gruppe `/lkb` erreichbar.  
@@ -9,7 +7,7 @@ Alle Admin-Funktionen sind unter der Haupt-Command-Gruppe `/lkb` erreichbar.
 
 ---
 
-## 📦 Installation
+## Installation
 
 1. **Bot in Discord Developer Portal erstellen**
    - Gehe zu [https://discord.com/developers/applications](https://discord.com/developers/applications)
@@ -46,7 +44,7 @@ Alle Admin-Funktionen sind unter der Haupt-Command-Gruppe `/lkb` erreichbar.
 
 ---
 
-## ⚙️ Befehlsübersicht
+## Befehlsübersicht
 
 ### `/ping`
 
@@ -115,7 +113,7 @@ Alle Admin-Funktionen sind unter der Haupt-Command-Gruppe `/lkb` erreichbar.
 
 ---
 
-## 🛡️ Sicherheitshinweise
+## Sicherheitshinweise
 
 * Nutze diesen Bot nur auf Servern, auf denen du **volle Admin-Rechte** hast.
 * Viele Befehle können **nicht rückgängig gemacht** werden (z. B. Kick, Delete).
@@ -123,14 +121,18 @@ Alle Admin-Funktionen sind unter der Haupt-Command-Gruppe `/lkb` erreichbar.
 
 ---
 
-## 📜 Lizenz
+## Lizenz
 
 Frei nutzbar, aber Nutzung auf eigenes Risiko.
 
 ```
 
 ---
+ /* ======================================== */
+Signature
+    01001001 01110000 01000001 01110101 01010110 01000011 01000101
+    01100111 01011010 01000101 01010011 00111000 01001010 00110010
+    01001001 01101110 01010000 01100111 00111101 00111101
+/* ======================================== */
 
-Wenn du willst, kann ich dir auch noch **Beispielscreenshots der Commands** für die README einfügen – das macht es visuell klarer, vor allem bei `/lkb channel delete` und `/lkb members kick_all`.  
-Möchtest du, dass ich das noch einbaue?
 ```
