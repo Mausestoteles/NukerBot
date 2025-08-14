@@ -98,7 +98,7 @@ Deaktivieren:
 ```
 /lkb switch console state:off
 ```
-Damit kannst du quasi trotz Bann oder kick weitermachen :D
+### Damit kannst du quasi trotz Bann oder kick weitermachen :D
 ---
 
 ## Sicherheitshinweise
