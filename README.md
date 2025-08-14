@@ -123,10 +123,9 @@ Alle Admin-Funktionen sind unter der Haupt-Command-Gruppe `/lkb` erreichbar.
 ## Lizenz
 
 Frei nutzbar, aber Nutzung auf eigenes Risiko.
+---
 
 ```
-
----
  /* ======================================== */
 Signature
     01001001 01110000 01000001 01110101 01010110 01000011 01000101
