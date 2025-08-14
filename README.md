@@ -125,7 +125,7 @@ Alle Admin-Funktionen sind unter der Haupt-Command-Gruppe `/lkb` erreichbar.
 
 ---
 
-## Signatur
+### Signatur:
 ```
  /* ======================================== */
 Signature
