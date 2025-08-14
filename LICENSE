@@ -1,4 +1,4 @@
-MIT License
+**Optimised MIT License**
 
 Copyright (c) 2025 Mausemann
 
@@ -12,6 +12,22 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
+In addition, the following signature block must be included in a human-readable
+location within the source code of any copy or substantial portion of the Software,
+whether modified or unmodified. The block may be moved within the file but must remain
+exactly as written, including all characters, spaces, line breaks, and comment markers.
+It must not be removed, altered, obfuscated, or made unreadable in any form:
+
+```
+/* ======================================== */
+// Signature
+//
+//    01001001 01110000 01000001 01110101 01010110 01000011 01000101
+//    01100111 01011010 01000101 01010011 00111000 01001010 00110010
+//    01001001 01101110 01010000 01100111 00111101 00111101
+/* ======================================== */
+```
+
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -19,5 +35,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-s
