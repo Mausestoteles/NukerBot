@@ -118,11 +118,11 @@ MIT-Lizenz in Kurzform:
 
 ## Autor
 
-**Lustiger Kleiner Bot** entwickelt von *Mausi*.
+**Lustiger Kleiner Bot** entwickelt vom *Mausemann*.
 
 ---
 
-### Signatur
+### Signatur:
 ```bash
 # /* ======================================== */
 # // Signature
