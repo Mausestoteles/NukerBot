@@ -1,5 +1,4 @@
 
-````markdown
 # 🤖 Lustiger Kleiner Bot (LKB)
 
 Ein leistungsstarker, lokal gehosteter Discord-Bot mit Slash-Commands, Admin-Tools und einem **Console-Mode**, um Serveraktionen direkt über deine lokale Konsole auszuführen.
@@ -45,7 +44,6 @@ Ein leistungsstarker, lokal gehosteter Discord-Bot mit Slash-Commands, Admin-Too
    ```bash
    git clone https://github.com/DEINUSERNAME/LKB.git
    cd LKB
-````
 
 2. **Python-Abhängigkeiten installieren**
 
