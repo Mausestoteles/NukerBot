@@ -4,7 +4,7 @@
 Ein mächtiger, lokal gehosteter Discord-Admin-Bot mit Slash-Commands.  
 Alle Admin-Funktionen sind unter der Haupt-Command-Gruppe `/lkb` erreichbar.  
 **Achtung:** Viele Befehle sind destruktiv – nutze sie mit Bedacht.
-
+````
 ---
 
 ## Installation
@@ -41,7 +41,6 @@ Alle Admin-Funktionen sind unter der Haupt-Command-Gruppe `/lkb` erreichbar.
    ```bash
    python bot.py
    ```
-````
 ---
 
 ## Befehlsübersicht
