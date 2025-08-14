@@ -1,10 +1,10 @@
-````markdown
+
 # Lustiger Kleiner Bot (LKB) Nuker Bot
 
 Ein mächtiger, lokal gehosteter Discord-Admin-Bot mit Slash-Commands.  
 Alle Admin-Funktionen sind unter der Haupt-Command-Gruppe `/lkb` erreichbar.  
 **Achtung:** Viele Befehle sind destruktiv – nutze sie mit Bedacht.
-````
+
 ---
 
 ## Installation
