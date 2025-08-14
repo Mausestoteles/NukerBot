@@ -103,7 +103,7 @@ Deaktivieren:
 
 ## Sicherheitshinweise
 
-* Verwende diesen Bot **nicht** auf produktiven Servern ohne ausdrückliche Genehmigung. (Muss das sagen, kontrolieren kanns eh keiner :D)
+* Verwende diesen Bot **nicht** auf produktiven Servern ohne ausdrückliche Genehmigung. (Muss das sagen, kontrollieren kanns eh keiner :D)
 * Befehle wie `kick_all`, `delete_all` oder `channel delete *` sind irreversibel.
 * Der **Console-Mode** gibt dir direkten Zugriff über die lokale Konsole – sichere deine Umgebung entsprechend ab.
 
