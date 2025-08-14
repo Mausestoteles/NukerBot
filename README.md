@@ -112,7 +112,7 @@ Deaktivieren:
 ## Lizenz
 
 Dieses Projekt steht unter der **MIT-Lizenz**. Siehe [LICENSE](LICENSE) für Details.
-MIT-Lizenz in Kurzform:
+* MIT-Lizenz in Kurzform:
 `"Hier ist der Code. Mach damit, was du willst – aber erwähne meinen Namen und verlange nicht, dass ich für Schäden hafte."`
 ---
 
