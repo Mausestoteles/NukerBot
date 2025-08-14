@@ -32,7 +32,7 @@ Ein leistungsstarker, lokal gehosteter Discord-Bot mit Slash-Commands, Admin-Too
   - `say <text>` → Schickt Nachricht in den Zielkanal.
   - `channel delete <name|*>` → Löscht Kanäle.
   - `server info` → Zeigt Serverinformationen.
-
+  
 ### Commands neu laden
 - `/lkb resync` → Synchronisiert die Slash-Commands erneut.
 
@@ -98,7 +98,7 @@ Deaktivieren:
 ```
 /lkb switch console state:off
 ```
-
+Damit kannst du quasi trotz Bann oder kick weitermachen :D
 ---
 
 ## Sicherheitshinweise
