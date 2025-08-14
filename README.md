@@ -41,7 +41,7 @@ Alle Admin-Funktionen sind unter der Haupt-Command-Gruppe `/lkb` erreichbar.
    ```bash
    python bot.py
    ```
-
+````
 ---
 
 ## Befehlsübersicht
@@ -136,4 +136,3 @@ Signature
 /* ======================================== */
 
 ```
-````
