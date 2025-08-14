@@ -12,11 +12,15 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-In addition, the following signature block must be included in a human-readable
-location within the source code of any copy or substantial portion of the Software,
-whether modified or unmodified. The block may be moved within the file but must remain
-exactly as written, including all characters, spaces, line breaks, and comment markers.
-It must not be removed, altered, obfuscated, or made unreadable in any form:
+The following signature block is included in a human-readable location within
+the source code of this Software and is present in every copy of the Software
+upon receipt. The block may be relocated within the file but must remain exactly
+as written, including all characters, spaces, line breaks, and comment markers.
+The signature block must not be removed, altered, obfuscated, or rendered unreadable
+in any form. Any attempt to remove, alter, or obscure the signature block immediately
+terminates all rights and permissions granted under this license for the affected
+copy or portion of the Software. Compliance with the signature block requirement
+is a condition of the license; removal or alteration constitutes a breach of this license.
 
 ```
 /* ======================================== */
@@ -28,10 +32,13 @@ It must not be removed, altered, obfuscated, or made unreadable in any form:
 /* ======================================== */
 ```
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+All rights granted under this license are expressly conditioned upon compliance
+with the requirements above. 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY
+OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES, LOSSES, OR OTHER LIABILITY, WHETHER DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, CONSEQUENTIAL, OR OTHERWISE, ARISING OUT OF OR IN CONNECTION WITH
+THE USE, COPYING, MODIFICATION, MERGING, PUBLICATION, DISTRIBUTION, OR OTHER
+DEALINGS IN THE SOFTWARE, INCLUDING BUT NOT LIMITED TO THE SIGNATURE BLOCK.
