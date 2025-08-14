@@ -1,39 +1,74 @@
 
-# Lustiger Kleiner Bot (LKB) Nuker Bot
+````markdown
+# 🤖 Lustiger Kleiner Bot (LKB)
 
-Ein mächtiger, lokal gehosteter Discord-Admin-Bot mit Slash-Commands.  
-Alle Admin-Funktionen sind unter der Haupt-Command-Gruppe `/lkb` erreichbar.  
-**Achtung:** Viele Befehle sind destruktiv – nutze sie mit Bedacht.
+Ein leistungsstarker, lokal gehosteter Discord-Bot mit Slash-Commands, Admin-Tools und einem **Console-Mode**, um Serveraktionen direkt über deine lokale Konsole auszuführen.
+
+> ⚠ **Achtung:** Dieser Bot kann extrem destruktive Aktionen auf einem Discord-Server durchführen. Verwende ihn nur in Testumgebungen oder mit voller Berechtigung!
 
 ---
 
-## Installation
+## 📌 Funktionen
 
-1. **Bot in Discord Developer Portal erstellen**
-   - Gehe zu [https://discord.com/developers/applications](https://discord.com/developers/applications)
-   - Erstelle eine neue Application → Bot hinzufügen
-   - Token **kopieren** (wird später als Umgebungsvariable `DISCORD_TOKEN` benötigt)
-   - Unter **Privileged Gateway Intents**:
-     - `Server Members Intent` aktivieren
-     - `Message Content Intent` optional aktivieren (nicht zwingend)
-   - Bot einladen mit **Admin-Rechten** (OAuth2 → URL Generator → Bot + Administrator)
+### 🔹 Basis
+- `/ping` → Testet, ob der Bot reagiert ("Pong!").
 
-2. **Python-Umgebung vorbereiten**
+### 🔹 Kanalbefehle (`/lkb channel`)
+- `delete <name|*>` → Löscht Kanäle mit bestimmtem Namen oder mit `*` alle Kanäle.
+- `rename_all` → Bennent alle Kanäle (und optional Kategorien) nach einem Muster um.
+
+### 🔹 Mitgliederbefehle (`/lkb members`)
+- `kick_all` → Kickt (fast) alle Mitglieder, mit Schutz für Owner/Admins/Bots (optional deaktivierbar).
+
+### 🔹 Rollenbefehle (`/lkb roles`)
+- `delete_all` → Löscht Rollen (mit Schutz für Standardrolle, höchste Botrolle und gemanagte Rollen).
+
+### 🔹 Serverinfos
+- `/lkb server` → Zeigt Infos zum aktuellen Server.
+
+### 🔹 Console-Mode (`/lkb switch console`)
+- `on` → Aktiviert die Möglichkeit, **lokal** Befehle an den Bot zu senden, die er auf dem Server ausführt.
+- `off` → Deaktiviert den Modus.
+- **Unterstützte Befehle in der Konsole:**
+  - `say <text>` → Schickt Nachricht in den Zielkanal.
+  - `channel delete <name|*>` → Löscht Kanäle.
+  - `server info` → Zeigt Serverinformationen.
+
+### 🔹 Commands neu laden
+- `/lkb resync` → Synchronisiert die Slash-Commands erneut.
+
+---
+
+## ⚙ Installation
+
+1. **Repository klonen**
    ```bash
-   pip install -U discord.py
+   git clone https://github.com/DEINUSERNAME/LKB.git
+   cd LKB
+````
 
+2. **Python-Abhängigkeiten installieren**
 
-3. **Bot-Token als Umgebungsvariable setzen**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-   * Windows (PowerShell):
+   Mindestanforderungen:
 
-     ```powershell
-     setx DISCORD_TOKEN "DEIN_BOT_TOKEN"
-     ```
-   * Linux/Mac:
+   * `discord.py` 2.x
+   * `colorama`
+
+3. **Bot-Token setzen**
+
+   * Erstelle in deinem Discord-Entwicklerportal eine Bot-App.
+   * Kopiere den Bot-Token und setze ihn als Umgebungsvariable:
 
      ```bash
-     export DISCORD_TOKEN="DEIN_BOT_TOKEN"
+     # Linux / macOS
+     export DISCORD_TOKEN="DEIN_TOKEN"
+
+     # Windows (Powershell)
+     setx DISCORD_TOKEN "DEIN_TOKEN"
      ```
 
 4. **Bot starten**
@@ -41,97 +76,49 @@ Alle Admin-Funktionen sind unter der Haupt-Command-Gruppe `/lkb` erreichbar.
    ```bash
    python bot.py
    ```
----
-
-## Befehlsübersicht
-
-### `/ping`
-
-**Beschreibung:** Schneller Healthcheck – antwortet mit „Pong! ✅“.
-**Berechtigungen:** Keine (jeder kann ausführen).
 
 ---
 
-### `/lkb channel delete`
+## 🖥 Console-Mode
 
-**Beschreibung:** Löscht Kanäle per Namen.
-**Parameter:**
+Mit `/lkb switch console on` kannst du Befehle über deine **lokale Konsole** an den Bot senden.
+Du musst angeben:
 
-* `name` → Exakter Kanalname oder `*` für ALLE Kanäle
-  **Berechtigungen:** `Kanäle verwalten`
+* **Dauer** in Minuten (`minutes`).
+* **Ziel-Textkanal** für Ausgaben (`target_channel`).
 
----
-
-### `/lkb channel rename_all`
-
-**Beschreibung:** Bennennt alle Kanäle nach einem Namensmuster um.
-**Parameter:**
-
-* `base` → Basisname (z. B. `channel`)
-* `start` → Startindex (Standard: 1)
-* `include_categories` → Kategorien ebenfalls umbenennen
-  **Berechtigungen:** `Kanäle verwalten`
-
----
-
-### `/lkb members kick_all`
-
-**Beschreibung:** Kickt (fast) alle Mitglieder eines Servers.
-**Parameter:**
-
-* `reason` → Grund (für Audit Log)
-* `include_admins` → Admins/Owner ebenfalls kicken? *(nicht empfohlen)*
-* `include_bots` → Bots ebenfalls kicken
-* `confirm` → Sicherheitsabfrage – **muss genau `YES` sein**
-  **Berechtigungen:** `Administrator`
-
----
-
-### `/lkb roles delete_all`
-
-**Beschreibung:** Löscht Rollen (geschützt: @everyone, höhere Rollen, managed Roles).
-**Parameter:**
-
-* `include_managed` → Auch gemanagte Rollen löschen versuchen
-* `confirm` → **muss genau `YES` sein**
-  **Berechtigungen:** `Server verwalten` oder `Administrator`
-
----
-
-### `/lkb server`
-
-**Beschreibung:** Zeigt eine Übersicht des Servers (Name, ID, Owner, Mitgliederzahl, Kanäle, Rollen, Erstellungsdatum).
-**Berechtigungen:** Keine (jeder kann ausführen).
-
----
-
-### `/lkb resync`
-
-**Beschreibung:** Registriert Slash-Commands neu (falls Änderungen nicht angezeigt werden).
-**Berechtigungen:** `Administrator`
-
----
-
-## Sicherheitshinweise
-
-* Nutze diesen Bot nur auf Servern, auf denen du **volle Admin-Rechte** hast.
-* Viele Befehle können **nicht rückgängig gemacht** werden (z. B. Kick, Delete).
-* Überprüfe vor Ausführung immer die Parameter (`confirm`-Abfrage schützt dich).
-
----
-
-### Lizenz:
-* Frei nutzbar, aber Nutzung auf eigenes Risiko.
-
----
-
-### Signatur:
-```
- /* ======================================== */
-Signature
-    01001001 01110000 01000001 01110101 01010110 01000011 01000101
-    01100111 01011010 01000101 01010011 00111000 01001010 00110010
-    01001001 01101110 01010000 01100111 00111101 00111101
-/* ======================================== */
+**Beispiel:**
 
 ```
+say Hallo Welt!
+channel delete test-channel
+server info
+```
+
+Deaktivieren:
+
+```
+/lkb switch console state:off
+```
+
+---
+
+## ⚠ Sicherheitshinweise
+
+* Verwende diesen Bot **nicht** auf produktiven Servern ohne ausdrückliche Genehmigung.
+* Befehle wie `kick_all`, `delete_all` oder `channel delete *` sind irreversibel.
+* Der **Console-Mode** gibt dir direkten Zugriff über die lokale Konsole – sichere deine Umgebung entsprechend ab.
+
+---
+
+## 📄 Lizenz
+
+Dieses Projekt steht unter der **MIT-Lizenz**. Siehe [LICENSE](LICENSE) für Details.
+
+---
+
+## ✍ Autor
+
+**Lustiger Kleiner Bot** entwickelt von *\[Dein Name oder Alias]*.
+
+
