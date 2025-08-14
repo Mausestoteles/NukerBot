@@ -21,7 +21,7 @@ Alle Admin-Funktionen sind unter der Haupt-Command-Gruppe `/lkb` erreichbar.
 2. **Python-Umgebung vorbereiten**
    ```bash
    pip install -U discord.py
-````
+
 
 3. **Bot-Token als Umgebungsvariable setzen**
 
@@ -136,3 +136,4 @@ Signature
 /* ======================================== */
 
 ```
+````
