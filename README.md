@@ -113,7 +113,7 @@ Deaktivieren:
 
 Dieses Projekt steht unter der **Enhanced MIT-Lizenz**. Diese ist eine Eigenkreation und **es wird empfohlen** sie zu lesen vor dem Benutzen.
 Siehe [LICENSE](LICENSE) für Details.
-* MIT-Lizenz in Kurzform:
+* Lizenz in Kurzform:
 `"Die „Enhanced MIT License“ erlaubt wie die MIT-Lizenz freie Nutzung, verlangt jedoch zwingend, dass ein fest definierter Signatur-Block unverändert und lesbar im Quellcode jeder Kopie bleibt, sonst erlöschen alle Rechte."`
 ---
 
