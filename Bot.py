@@ -236,7 +236,6 @@ async def server_info(interaction: discord.Interaction):
     if guild is None:
         return await interaction.response.send_message("❌ Nur im Server nutzbar.", ephemeral=True)
 
-    # Basis-Zahlen
     total_members = guild.member_count
     roles_count = len(guild.roles)
     text_channels = sum(isinstance(c, discord.TextChannel) for c in guild.channels)
@@ -275,16 +274,15 @@ async def resync_cmd(interaction: discord.Interaction):
         log.exception("Resync-Fehler")
         return await interaction.followup.send(f"❌ Resync-Fehler: {e}", ephemeral=True)
 
-# Gruppe registrieren (nach allen Subcommands!)
 tree.add_command(lkb)
 
 # ---------- Sync global + pro Gilde ----------
 @client.event
 async def on_ready():
     try:
-        synced = await tree.sync()  # global
+        synced = await tree.sync()
         log.info("Global %d Slash-Commands synchronisiert.", len(synced))
-        for g in client.guilds:      # pro Gilde (schnell sichtbar)
+        for g in client.guilds:
             await tree.sync(guild=g)
         log.info("Slash-Commands pro Gilde synchronisiert (%d Gilden).", len(client.guilds))
         log.info("Eingeloggt als %s (ID: %s)", client.user, client.user.id)
@@ -312,3 +310,4 @@ if __name__ == "__main__":
 #    01100111 01011010 01000101 01010011 00111000 01001010 00110010
 #    01001001 01101110 01010000 01100111 00111101 00111101
 # /* ======================================== */
+
